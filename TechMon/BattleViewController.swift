@@ -89,6 +89,7 @@ class BattleViewController: UIViewController {
     
     @IBAction func chargeAction(){
         TechMonManager.playSE(fileName: "SE_charge")
+        print("charge")
         
         player.currentTP += 20
         if player.currentTP >= player.maxTP {
@@ -117,6 +118,7 @@ class BattleViewController: UIViewController {
     func updateUI(){
         playerHPBar.progress = player.currentHP / player.maxHP
         enemyHPBar.progress = enemy.currentHP / enemy.maxHP
+        playerTPLabel.text = "\(player.currentTP) / \(player.maxTP)" //TPを更新
     }
     
     func finishBattle(vanishImageView: UIImageView, isPlayerWin: Bool){

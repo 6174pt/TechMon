@@ -14,16 +14,16 @@ class Player {
     var image: UIImage!
     
     // 攻撃力
-    var attackPoint: Float = 0
-    var fireAttackPoint: Float = 0
+    var attackPoint: Float = 10
+    var fireAttackPoint: Float = 30
     
     // 現在のステータス
-    var currentHP: Float = 0
+    var currentHP: Float = 100
     var currentTP: Int = 0
     
     // 最大値
-    var maxHP: Float = 0
-    var maxTP: Int = 0
+    var maxHP: Float = 100
+    var maxTP: Int = 50
     
     // initで必要なステータスを設定できるようにする
     init(name: String, imageName: String, attackPoint: Float, maxHP: Float) {

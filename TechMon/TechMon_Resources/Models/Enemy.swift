@@ -14,13 +14,13 @@ class Enemy {
     var image: UIImage!
     
     // 攻撃力
-    var attackPoint: Float = 0
+    var attackPoint: Float = 10
     
     // 現在のステータス
-    var currentHP: Float = 0
+    var currentHP: Float = 200
     
     // 最大値
-    var maxHP: Float = 0
+    var maxHP: Float = 200
     
     // initで全て設定できるようにする
     init(name: String, imageName: String, attackPoint: Float, maxHP: Float) {
